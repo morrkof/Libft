@@ -2,9 +2,9 @@
 The goal of the project is to re-write several functions from the C standard library. My own library is compiled with a Makefile to static library **libft.a**.
 
 ### list of functions:
-Name with signature | Description | Return value
+Name | Prototype and description | Return value
 ------|-------|-------|
-void \***ft_memset**(void *s, int c, size_t n) | Fills the first `n` bytes of the memory area pointed to by `s` with the constant byte `c`. | A pointer to the memory area `s`.
+**ft_memset** | void \*ft_memset(void *s, int c, size_t n) \ Fills the first `n` bytes of the memory area pointed to by `s` with the constant byte `c`. | A pointer to the memory area `s`.
 void **ft_bzero**(void *s, size_t n) | Erases the data in the `n` bytes of the memory starting at the location pointed to by `s`, by writing zeros (bytes containing '\0') to that area. | None.
 void \***ft_memcpy**(void *dest, const void *src, size_t n) | Copies `n` bytes from memory area `src` to memory area `dest`.  The memory areas must not overlap. | A pointer to `dest`.
 void \***ft_memccpy**(void *dest, const void *src, int c, size_t n) | Copies no more than `n` bytes from memory area `src` to memory area `dest`, stopping when the character `c` is found. If the memory areas overlap, the results are undefined. | A pointer to the next character in `dest` after `c`, or NULL if `c` was not found in the first `n` characters of `src`.
